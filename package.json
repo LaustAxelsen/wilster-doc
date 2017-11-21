@@ -1,6 +1,6 @@
 {
   "name": "wilster-doc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Creates simple documentation for ReactJS components",
   "main": "./bin/wilster-doc.js",
   "scripts": {
@@ -21,17 +21,18 @@
   "devDependencies": {
     "async": "^2.6.0",
     "chai": "~3.0.0",
-    "commander": "^2.11.0",
     "coveralls": "^2.11.2",
-    "fs": "0.0.1-security",
     "istanbul": "^0.3.17",
     "mocha": "~2.2.5",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1"
+  },
+  "dependencies": {
+    "commander": "^2.11.0",
+    "fs": "0.0.1-security",
     "node-dir": "^0.1.17",
     "path": "^0.12.7",
-    "prop-types": "^15.6.0",
-    "react": "^16.1.1",
     "react-docgen": "^2.20.0",
     "react-docgen-markdown-renderer": "^1.0.1"
-  },
-  "dependencies": {}
+  }
 }
