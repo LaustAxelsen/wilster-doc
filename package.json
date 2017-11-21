@@ -1,6 +1,6 @@
 {
   "name": "wilster-doc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates simple documentation for ReactJS components",
   "main": "./bin/wilster-doc.js",
   "scripts": {
