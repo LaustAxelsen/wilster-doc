@@ -21,7 +21,7 @@ Annotation | Description
 
 
 
-```
+```javascript
 /**
  * @componentName MyLib.Button
  * @description This is a button. Super nice component.
