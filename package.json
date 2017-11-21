@@ -1,0 +1,22 @@
+{
+  "name": "wilster-doc",
+  "version": "1.0.0",
+  "description": "Creates simple documentation for ReactJS components",
+  "scripts": {
+    "test": "mocha --reporter nyan",
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://upcoming.com"
+  },
+  "keywords": ["reactjs", "react", "doc", "documentation", "spec", "annotation", "readme", "read"],
+  "author": "Laust Axelsen",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "~3.0.0",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.17",
+    "mocha": "~2.2.5"
+  }
+}
