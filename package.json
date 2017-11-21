@@ -2,21 +2,47 @@
   "name": "wilster-doc",
   "version": "1.0.0",
   "description": "Creates simple documentation for ReactJS components",
+  "main": "./bin/wilster-doc.js",
   "scripts": {
     "test": "mocha --reporter nyan",
+    "examples": "./bin/wilster-doc.js run -f ./examples/ -o ./examples/documentation.md",
     "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
   },
   "repository": {
     "type": "git",
     "url": "https://upcoming.com"
   },
-  "keywords": ["reactjs", "react", "doc", "documentation", "spec", "annotation", "readme", "read"],
+  "keywords": [
+    "reactjs",
+    "react",
+    "doc",
+    "documentation",
+    "spec",
+    "annotation",
+    "readme",
+    "read",
+    "components",
+    "docs"
+  ],
   "author": "Laust Axelsen",
   "license": "MIT",
+  "bin": {
+    "wilster-doc": "./bin/wilster-doc.js"
+  },
   "devDependencies": {
+    "async": "^2.6.0",
     "chai": "~3.0.0",
+    "commander": "^2.11.0",
     "coveralls": "^2.11.2",
+    "fs": "0.0.1-security",
     "istanbul": "^0.3.17",
-    "mocha": "~2.2.5"
-  }
+    "mocha": "~2.2.5",
+    "node-dir": "^0.1.17",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1",
+    "react-docgen": "^2.20.0",
+    "react-docgen-markdown-renderer": "^1.0.1"
+  },
+  "dependencies": {}
 }
