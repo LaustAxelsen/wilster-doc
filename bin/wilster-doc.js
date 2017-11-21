@@ -4,11 +4,9 @@ var fs = require('fs')
 var reactDocgen = require('react-docgen')
 var ReactDocGenMarkdownRenderer = require('react-docgen-markdown-renderer')
 var dir = require('node-dir')
-
 var program = require('commander')
 
 program.version('1.0.0')
-program.on('--help', function() {})
 
 program
   .command('run')
@@ -84,11 +82,8 @@ function handleExtraction(path, outputPath) {
               let annotationSplits = doc.description.description.split('@')
 
               annotationSplits.forEach(annotation => {
-                let annotationFirstWord = annotation.split(' ')[0]
-
-                if (annotationFirstWord) {
-                  doc.description[annotationFirstWord] = annotation.replace(annotationFirstWord + ' ', '')
-                }
+                let afw = annotation.split(' ')[0]
+                if (afw) doc.description[afw] = annotation.replace(afw + ' ', '')
               })
             }
 
@@ -108,6 +103,7 @@ function handleExtraction(path, outputPath) {
         componentsOutput.sort(function(a, b) {
           return a.name == b.name ? 0 : a.name > b.name ? 1 : -1
         })
+
         componentsOutput.forEach(componentData => {
           if (componentData.value) {
             totalContent += componentData.value
