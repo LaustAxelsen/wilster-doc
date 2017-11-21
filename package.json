@@ -12,18 +12,7 @@
     "type": "git",
     "url": "https://github.com/LaustAxelsen/wilster-doc"
   },
-  "keywords": [
-    "reactjs",
-    "react",
-    "doc",
-    "documentation",
-    "spec",
-    "annotation",
-    "readme",
-    "read",
-    "components",
-    "docs"
-  ],
+  "keywords": ["reactjs", "react", "doc", "documentation", "spec", "annotation", "readme", "read", "components", "docs", "markdown"],
   "author": "Laust Axelsen",
   "license": "MIT",
   "bin": {

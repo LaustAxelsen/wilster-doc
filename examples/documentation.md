@@ -3,9 +3,12 @@
 
 This is a button. Super nice component.
 
-Propaaaa | Type | Default | Req | Description
----- | --------------------- | ---- | ------- | --------
-**type** | \`Enum('default','primary','success','warning','danger')\` | \`'default'\` | - | One of basic types of buttons you can display.
+Prop | Type | Default | Req | Description
+--- | --- | --- | --- | ---
+**label** | `String` |  | - | The label of the button
+**onClick** | `Function` |  | Yes | Callback when the button is clicked.
+**type** | `Enum('default','primary')` |  `'default'` | - | One of basic types of buttons you can display.
+**visible** | `Boolean` |  | - | Should the button be visible.
 
 
 
@@ -14,9 +17,19 @@ Propaaaa | Type | Default | Req | Description
 
 A really nice header.
 
-Propaaaa | Type | Default | Req | Description
----- | --------------------- | ---- | ------- | --------
-**title** | \`String\` | \`'Foo'\` | - | One of basic types of buttons you can display.
+Prop | Type | Default | Req | Description
+--- | --- | --- | --- | ---
+**title** | `String` |  `'Foo'` | - | One of basic types of buttons you can display.
+
+
+
+## Popover
+
+Regular popover component without any annotation.
+
+Prop | Type | Default | Req | Description
+--- | --- | --- | --- | ---
+**content** | `String` |  `'Im a popover'` | - | 
 
 
 

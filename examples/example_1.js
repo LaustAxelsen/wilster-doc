@@ -17,9 +17,24 @@ FancyButton.defaultProps = {
 
 FancyButton.propTypes = {
   /**
-     * One of basic types of buttons you can display.
-     */
-  type: PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger'])
+   * One of basic types of buttons you can display.
+   */
+  type: PropTypes.oneOf(['default', 'primary']),
+
+  /**
+   * Callback when the button is clicked.
+   */
+  onClick: PropTypes.func.isRequired(),
+
+  /**
+   * Should the button be visible.
+   */
+  visible: PropTypes.bool,
+
+  /**
+   * The label of the button
+   */
+  label: PropTypes.string
 }
 
 /**
@@ -41,4 +56,21 @@ FancyHeader.propTypes = {
  * One of basic types of buttons you can display.
  */
   title: PropTypes.string
+}
+
+/**
+ * Regular popover component without any annotation.
+ */
+export class Popover extends React.Component {
+  render() {
+    return <div />
+  }
+}
+
+Popover.defaultProps = {
+  content: 'Im a popover'
+}
+
+Popover.propTypes = {
+  content: PropTypes.string
 }

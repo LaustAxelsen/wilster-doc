@@ -47,11 +47,12 @@ function handleExtraction(path, outputPath) {
           const docs = reactDocgen.parse(content, reactDocgen.resolver.findAllComponentDefinitions)
 
           docs.forEach(doc => {
-            if (doc.description && doc.description.match('@')) {
-              doc.description = {
-                description: doc.description
-              }
+            doc.description = {
+              componentName: doc.displayName,
+              description: doc.description
+            }
 
+            if (doc.description.description && doc.description.description.match('@')) {
               let annotationSplits = doc.description.description.split('@')
 
               annotationSplits.forEach(annotation => {
@@ -66,7 +67,6 @@ function handleExtraction(path, outputPath) {
             })
           })
         } catch (e) {
-          //console.log('>> No components found in ' + dirPath)
           // console.log('error ', e)
         }
         next()
