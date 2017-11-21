@@ -12,18 +12,7 @@
     "type": "git",
     "url": "https://upcoming.com"
   },
-  "keywords": [
-    "reactjs",
-    "react",
-    "doc",
-    "documentation",
-    "spec",
-    "annotation",
-    "readme",
-    "read",
-    "components",
-    "docs"
-  ],
+  "keywords": ["reactjs", "react", "doc", "documentation", "spec", "annotation", "readme", "read", "components", "docs"],
   "author": "Laust Axelsen",
   "license": "MIT",
   "bin": {

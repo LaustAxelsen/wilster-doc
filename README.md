@@ -5,7 +5,7 @@ A tiny library that reads your ReactJS annotations using `react-docgen` and `rea
 
 ## Installation
 
-  `npm install ...`
+  `npm install -g wilster-doc`
 
 
 ## Examples
