@@ -1,6 +1,6 @@
 {
   "name": "wilster-doc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Creates simple documentation for ReactJS components",
   "main": "./bin/wilster-doc.js",
   "scripts": {
@@ -12,7 +12,18 @@
     "type": "git",
     "url": "https://github.com/LaustAxelsen/wilster-doc"
   },
-  "keywords": ["reactjs", "react", "doc", "documentation", "spec", "annotation", "readme", "read", "components", "docs"],
+  "keywords": [
+    "reactjs",
+    "react",
+    "doc",
+    "documentation",
+    "spec",
+    "annotation",
+    "readme",
+    "read",
+    "components",
+    "docs"
+  ],
   "author": "Laust Axelsen",
   "license": "MIT",
   "bin": {
