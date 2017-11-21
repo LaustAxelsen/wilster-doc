@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://upcoming.com"
+    "url": "https://github.com/LaustAxelsen/wilster-doc"
   },
   "keywords": ["reactjs", "react", "doc", "documentation", "spec", "annotation", "readme", "read", "components", "docs"],
   "author": "Laust Axelsen",
